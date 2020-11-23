@@ -2,22 +2,22 @@
   "development": {
     "username": "corey",
     "password": "corey",
-    "database": "express_auth_development",
+    "database": "database_development",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "mysql"
   },
   "test": {
     "username": "corey",
     "password": "corey",
-    "database": "express_auth_test",
+    "database": "database_test",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "mysql"
   },
   "production": {
     "username": "corey",
     "password": "corey",
-    "database": "express_auth_production",
+    "database": "database_production",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "mysql"
   }
 }
