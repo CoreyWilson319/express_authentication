@@ -10,10 +10,15 @@
     <header>
       <nav>
         <ul>
-          <li><a href="/auth/signup">Signup</a></li>
-          <li><a href="/auth/login">Login</a></li>
-          <li><a href="/auth/logout">Logout</a></li>
-          <li><a href="/profile">Profile</a></li>
+          <!-- if logged in only show logout and profile -->
+          <% if (!currentUser) { %>
+            <li><a href="/auth/signup">Signup</a></li> 
+            <li><a href="/auth/login">Login</a></li>
+          <% } else { %> 
+            <li><a href="/auth/logout">Logout</a></li>
+            <li><a href="/profile">Profile</a></li>
+          <% } %>
+          <!-- if logged out show signup and login -->
         </ul>
       </nav>
     </header>
